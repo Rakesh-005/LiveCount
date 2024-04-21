@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+   <p id="visitor-count">Number of visitors: 0</p>
+   <script>
+      let visitorCount = localStorage.getItem('visitorCount') || 0;
+      let display = document.getElementById("visitor-count");
+      visitorCount++;
+      localStorage.setItem('visitorCount', visitorCount);
+      display.innerHTML = "Number of visitors: " +  visitorCount;
+   </script>
+</body>
+</html>
